@@ -39,4 +39,4 @@ def aoc10_2(file_path: Path) -> None:
 
     cpu_register = operate_over_cpu(processed_instructions)
     screen = operate_over_screen(cpu_register)
-    print(screen)
+    print("\n\n" + screen)
