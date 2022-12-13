@@ -13,7 +13,7 @@ All Rights Reserved
 from typing import Dict
 
 
-def operate_over_screen(cpu_registe_per_cycle: Dict[int, int]):
+def operate_over_screen(cpu_register_per_cycle: Dict[int, int]):
 
     MAX_PIXEL_COL = 40
     MAX_PIXEL_ROW = 6
@@ -23,7 +23,7 @@ def operate_over_screen(cpu_registe_per_cycle: Dict[int, int]):
 
     screen = [["." for _ in range(MAX_PIXEL_COL)] for _ in range(MAX_PIXEL_ROW)]
 
-    for cycle, register_value in cpu_registe_per_cycle.items():
+    for cycle, register_value in cpu_register_per_cycle.items():
 
         print(f"Cycle: {cycle} => row: {current_row} - col: {current_pixel}")
         target_pixel = (register_value) % MAX_PIXEL_COL
