@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aoc2022"
+version = "0.1.0"
+description = ""
+authors = ["Andrés Ferreiro González <aferreiro@gradiant.org>"]
+
+[tool.poetry.scripts]
+aoc2022_CLI = "aoc2022:app"
+
+[tool.poetry.dependencies]
+python = "^3.10.2"
+loguru = "^0.6.0"
+typer = "^0.7.0"
+rich = "^12.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pep8 = "^1.7.1"
+pytest = "^7.1.2"
+bandit = "^1.7.4"
+black = "^22.6.0"
+rope = "^1.3.0"
+flake8 = "^5.0.4"
+pre-commit = "^2.20.0"
+vulture = "^2.5"
+pdoc = "^12.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
