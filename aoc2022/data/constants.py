@@ -21,7 +21,7 @@ class AoCDay(str, Enum):
     The inheritance of both str and Enum is a requirement from Typer. With IntEnum / plain Enum, this does not work.
     """
 
-    DAY_9 = 9
+    DAY_10 = 10
 
     @classmethod
     def has_value(cls, value):

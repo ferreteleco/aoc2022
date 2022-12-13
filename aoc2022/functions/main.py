@@ -17,6 +17,7 @@ from timeit import default_timer as timer
 from rich import print as display
 
 from aoc2022.data.constants import AoCDay
+from aoc2022.functions.aoc10.aoc10 import aoc10_1, aoc10_2
 
 
 def main(aoc_day: AoCDay, input_file_path: Path) -> None:
@@ -35,14 +36,16 @@ def main(aoc_day: AoCDay, input_file_path: Path) -> None:
     try:
 
         match aoc_day:
-            case AoCDay.DAY_9:
+            case AoCDay.DAY_10:
+                display("[blue]Entrypoint[/blue] for [blue]part I[/blue] goes [blue]here[/blue]")
                 t_init = timer()
-                display("[blue]Entrypoint[/blue] for [blue]part I[/blue] goes [blue]here[/blue] (unimplemented)")
+                aoc10_1(input_file_path)
                 t_end = timer()
                 elapsed_1 = t_end - t_init
 
+                display("[blue]Entrypoint[/blue] for [blue]part II[/blue] goes [blue]here[/blue]")
                 t_init = timer()
-                display("[blue]Entrypoint[/blue] for [blue]part II[/blue] goes [blue]here[/blue] (unimplemented)")
+                aoc10_2(input_file_path)
                 t_end = timer()
                 elapsed_2 = t_end - t_init
             case _:
